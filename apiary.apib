@@ -1,0 +1,547 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# wave
+
+# Group Event
+
+
+## Event情報へのアクセス [/api/events]
+
+### Event一覧取得 [GET]
+
++ Response 200 (application/json)
+
+        {
+            "events":[
+                {
+                    "id": 1,
+                    "title": "Autem facilis dolorem reprehenderit explicabo.",
+                    "catch_image": "http://uno.com/sed-blanditiis-beatae-voluptates-repellat-debitis.html",
+                    "place": "7678608 鹿児島県中津川市北区三宅町藤本1-10-2",
+                    "day": "2017-05-17 08:56:31",
+                    "genre": 8,
+                    "tag": "Dolor autem consectetur et minima nihil quia numquam natus odit velit et est.",
+                    "content": "Sapiente et corporis sint impedit deserunt vel. Aperiam itaque sit consectetur ut. Dolor laudantium officia fuga explicabo. Dicta eveniet accusantium aliquid rerum distinctio et. Illo nulla dignissimos perferendis delectus eos eum porro. Similique occaecati quo et magni vero autem.",
+                    "created_at": "2016-11-17 05:03:28",
+                    "updated_at": "2016-11-17 05:03:28"
+                },
+                {
+                    "id": 2,
+                    "title": "Eligendi quaerat sit ipsam error.",
+                    "catch_image": "http://www.tanabe.com/vitae-eveniet-mollitia-quia-enim-tenetur-inventore-ad.html",
+                    "place": "8673627 鳥取県工藤市北区斉藤町坂本2-7-6",
+                    "day": "2016-11-22 22:17:46",
+                    "genre": 4,
+                    "tag": "Eius in veritatis eveniet harum et consequatur.",
+                    "content": "Ab nemo labore enim placeat. Quo minima quod similique in consectetur. Cupiditate autem possimus et aut quam nihil. Dolores aspernatur voluptatem fuga.",
+                    "created_at": "2016-11-17 05:03:28",
+                    "updated_at": "2016-11-17 05:03:28"
+                }
+            ]
+        }
+        
+### Eventの追加 [POST]
+
++ Request (application/json)
+
+        {
+            "event":{
+                "title": "Autem facilis dolorem reprehenderit explicabo.",
+                "catch_image": "http://uno.com/sed-blanditiis-beatae-voluptates-repellat-debitis.html",
+                "place": "7678608 鹿児島県中津川市北区三宅町藤本1-10-2",
+                "day": "2017-05-17 08:56:31",
+                "genre": 8,
+                "tag": "Dolor autem consectetur et minima nihil quia numquam natus odit velit et est.",
+                "content": "Sapiente et corporis sint impedit deserunt vel. Aperiam itaque sit consectetur ut. Dolor laudantium officia fuga explicabo. Dicta eveniet accusantium aliquid rerum distinctio et. Illo nulla dignissimos perferendis delectus eos eum porro. Similique occaecati quo et magni vero autem."
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "event":{
+                "id": 1,
+                "title": "Autem facilis dolorem reprehenderit explicabo.",
+                "catch_image": "http://uno.com/sed-blanditiis-beatae-voluptates-repellat-debitis.html",
+                "place": "7678608 鹿児島県中津川市北区三宅町藤本1-10-2",
+                "day": "2017-05-17 08:56:31",
+                "genre": 8,
+                "tag": "Dolor autem consectetur et minima nihil quia numquam natus odit velit et est.",
+                "content": "Sapiente et corporis sint impedit deserunt vel. Aperiam itaque sit consectetur ut. Dolor laudantium officia fuga explicabo. Dicta eveniet accusantium aliquid rerum distinctio et. Illo nulla dignissimos perferendis delectus eos eum porro. Similique occaecati quo et magni vero autem.",
+                "created_at": "2016-11-17 05:03:28",
+                "updated_at": "2016-11-17 05:03:28"
+            }
+        }
+
+## 個別Eventへのアクセス [/api/events/{id}]
+
+### Eventの取得 [GET]
+
++ Response 200 (application/json)
+
+        {
+            "event":{
+                "id": 1,
+                "title": "Autem facilis dolorem reprehenderit explicabo.",
+                "catch_image": "http://uno.com/sed-blanditiis-beatae-voluptates-repellat-debitis.html",
+                "place": "7678608 鹿児島県中津川市北区三宅町藤本1-10-2",
+                "day": "2017-05-17 08:56:31",
+                "genre": 8,
+                "tag": "Dolor autem consectetur et minima nihil quia numquam natus odit velit et est.",
+                "content": "Sapiente et corporis sint impedit deserunt vel. Aperiam itaque sit consectetur ut. Dolor laudantium officia fuga explicabo. Dicta eveniet accusantium aliquid rerum distinctio et. Illo nulla dignissimos perferendis delectus eos eum porro. Similique occaecati quo et magni vero autem.",
+                "created_at": "2016-11-17 05:03:28",
+                "updated_at": "2016-11-17 05:03:28"
+            }
+        }
+
+### Eventの更新 [PUT]
+
++ Request (application/json)
+
+            {
+                "event":{
+                    "title": "Autem facilis dolorem reprehenderit explicabo.",
+                    "catch_image": "http://uno.com/sed-blanditiis-beatae-voluptates-repellat-debitis.html",
+                    "place": "7678608 鹿児島県中津川市北区三宅町藤本1-10-2",
+                    "day": "2017-05-17 08:56:31",
+                    "genre": 8,
+                    "tag": "Dolor autem consectetur et minima nihil quia numquam natus odit velit et est.",
+                    "content": "Sapiente et corporis sint impedit deserunt vel. Aperiam itaque sit consectetur ut. Dolor laudantium officia fuga explicabo. Dicta eveniet accusantium aliquid rerum distinctio et. Illo nulla dignissimos perferendis delectus eos eum porro. Similique occaecati quo et magni vero autem."
+                }
+            }
+
++ Response 200 (application/json)
+
+        
+        {
+            "event":{
+                "id": 1,
+                "title": "Autem facilis dolorem reprehenderit explicabo.",
+                "catch_image": "http://uno.com/sed-blanditiis-beatae-voluptates-repellat-debitis.html",
+                "place": "7678608 鹿児島県中津川市北区三宅町藤本1-10-2",
+                "day": "2017-05-17 08:56:31",
+                "genre": 8,
+                "tag": "Dolor autem consectetur et minima nihil quia numquam natus odit velit et est.",
+                "content": "Sapiente et corporis sint impedit deserunt vel. Aperiam itaque sit consectetur ut. Dolor laudantium officia fuga explicabo. Dicta eveniet accusantium aliquid rerum distinctio et. Illo nulla dignissimos perferendis delectus eos eum porro. Similique occaecati quo et magni vero autem.",
+                "created_at": "2016-11-17 05:03:28",
+                "updated_at": "2016-11-17 05:03:28"
+            }
+        }
+
+### Eventの削除 [DELETE]
+
++ Response 200 (application/json)
+        
+        {
+        
+        }
+
+## 個別Eventの主催者情報アクセス [/api/events/{id}/organizers]
+
+### 主催者情報一覧 [GET]
+
++ Response 200 (application/json)
+
+        
+        {
+            "organaizers" : [
+                {
+                    "id" : 1,
+                    "event_id" : 1,
+                    "user_id" : 1,
+                    "comment" : "初イベントです。頑張ります。",
+                    "priority_ranking" : 1
+                },
+                {
+                    "id" : 2,
+                    "event_id" : 1,
+                    "user_id" : 2,
+                    "comment" : "イベントの補助担当担当です。",
+                    "priority_ranking" : 2
+                }
+            ]
+        }
+
+## イベント参加枠 [/api/events/{id}/entries]
+
+### イベント参加枠一覧 [GET]
+
++ Response 200 (application/json)
+
+        {
+            "entries" : [
+                {
+                    "id" : 1,
+                    "event_id" : 1,
+                    "event_entry_name" : "LT登壇枠",
+                    "event_entry_max_num" : 8,
+                    "event_entry_now_num" : 0
+                },
+                {
+                    "id" : 2,
+                    "event_id" : 1,
+                    "event_entry_name" : "一般参加者",
+                    "event_entry_max_num" : 12,
+                    "event_entry_now_num" : 4
+                }
+            ]
+        }
+        
+### イベント参加枠追加 [POST]
+
++ Request (application/json)
+    
+        {
+            "entries" : {
+                "event_id" : 1,
+                "event_entry_name" : "審査枠",
+                "event_entry_max_num" : 5
+            }
+        }
+        
+* Response 200 (application/json)
+        
+        {
+        }
+
+
+## 個別イベント参加枠 [/api/events/{event_id}/entries/{entry_id}]
+
+### 個別イベント参加枠参加者追加 [POST]
+
++ Request (application/json)
+
+        { 
+            "participant" : {
+                "event_id" : 1,
+                "user_id" : 1,
+                "entry_id" : 1
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+        }
+
+
+### 個別イベント参加枠更新 [PATCH]
+
++ Request (application/json)
+        
+        {
+            "entry" : {
+                "event_entry_name" : "審査員枠",
+                "event_entry_max_num" : 4
+            }
+        }
+        
++ Response 200 (application/json)
+
+        {
+        }
+        
+### 個別イベント参加枠削除 [DELETE]
+
++ Response 200 (application/json)
+
+        {
+        }
+        
+## イベント参加者一覧 [/api/events/{event_id}/entries/{entry_id}/participants]
+
+### 個別イベント参加枠参加者一覧 [GET]
+
++ Response 200 (application/json)
+
+        {
+            "participants" : [
+                {
+                    "user_id" : 1,
+                    "event_id" : 1,
+                    "entry_id" : 1,
+                    "evaluate" : 1
+                },
+                {
+                    "user_id" : 2,
+                    "event_id" : 1,
+                    "entry_id" : 1,
+                    "evaluate" : 1
+                }
+            ]
+        }
+        
+## イベント個別参加者 [/api/events/{event_id}/entries/{entry_id}/participants/{participant_id}]
+
+### イベント個別参加者、イベント評価 [POST]
+
++ Request (application/json)
+
+        {
+            "evaluate" : 1
+        }
+        
++ Response 200 (application/json)
+    
+        {
+        }
+        
+
+### イベント個別参加者削除 [DELETE]
+
++ Response 200 (application/json)
+        
+        {
+        }
+
+# Group Genre
+    
+## Genre一覧へのアクセス [/api/genre]
+
+### Genre一覧 [GET]
+
++ Response 200 (application/json)
+        
+        {
+            "genre" : {
+                "1" : "経済学",
+                "2" : "情報"
+            }
+        }
+
+# Group Tag
+
+## tagの検索 [/api/tag]
+
+### tagの検索[POST]
+
++ Request (application/json)
+
+        {
+            "tag" : {
+                "Prefix" : "an"
+                "number" : 5
+            }
+        }
+
++ Response 200 (application/json)
+
+        {
+            "tag" : [
+                "Android",
+                "ansible",
+                "AngularJS",
+                "animation",
+                "AndroidStudio"
+            ]
+        }
+        
+# Group UserDetail
+
+## ユーザ詳細情報取得 [/api/users/{nickname}/detail]
+
+### ユーザ詳細情報取得[GET]
+
++ Response 200 (application/json)
+
+        {
+          "user_id": 1,
+          "user_detail": {
+            "nickname": "makki",
+            "sex": 1,
+            "cover_image": "http://www.suzuki.com/quia-et-et-eos-natus-assumenda-repellat",
+            "icon": "http://hirokawa.com/consequatur-nihil-illum-voluptatum-maxime-minus-cum-voluptates",
+            "introduction": "大阪を拠点に、フロントエンドエンジニアとして活動しています。HAL大阪 web開発学科。最近は株式会社Far Connectionが運営する「Tech Logics」と言う約200人のエンジニアやデザイナー、VCの方などが参加しているオンラインコミュニティの代表になったり、関東でも活発なIoT縛りの勉強会（IoTLT）を主催しています。基本的にはJSフレームワークなどを使ってSPAを作って楽しんでいますが、SPAにIoTなどいろいろ盛り込んで遊んでます。他にも、Skyland Ventures, East Ventures主催のイベントのスタッフをやらせていただいています。さらに来年(2017年)には、関西で一番大きなフロントエンドの祭典である「FRONTEND CONFERENCE 2017」の広報且つ当日のスタッフとして参加しています。プログラミングだけでなく、水泳8年、タップダンス8年、バレエ4年、珠算3年とダンサーとして活動していた時期もありました。",
+            "school_name": "HAL大阪",
+            "undergraduate": "IT学部",
+            "graduate": "2019/3",
+            "address": {
+              "id": 3,
+              "region": "青森県"
+            },
+            "facebook": "https://www.tanabe.com/saepe-quae-officia-est-eum-libero",
+            "twitter": "http://uno.jp/nesciunt-enim-ut-odio",
+            "number_participate": 100,
+            "number_build": 300,
+            "career_history": [
+              {
+                "id": 1,
+                "user_id": 1,
+                "title": "lebe",
+                "Contents": "しごかれた",
+                "start_time": "2017/4",
+                "end_time": "2017/4"
+              },
+              {
+                "id": 2,
+                "user_id": 1,
+                "title": "morein",
+                "Contents": "遊んでた",
+                "start_time": "2017/4",
+                "end_time": "2017/4"
+              }
+            ],
+            "aspiring_industries": [
+              {
+                "id": 2,
+                "aspiring_industry": "出版"
+              },
+              {
+                "id": 3,
+                "aspiring_industry": "コンサル"
+              },
+              {
+                "id": 5,
+                "aspiring_industry": "自動車"
+              },
+              {
+                "id": 5,
+                "aspiring_industry": "自動車"
+              }
+            ],
+            "award": [
+              {
+                "id": 1,
+                "user_id": 1,
+                "award": "基本情報(仮)",
+                "date": "2017/4"
+              },
+              {
+                "id": 2,
+                "user_id": 1,
+                "award": "応用情報(仮)",
+                "date": "2017/4"
+              },
+              {
+                "id": 3,
+                "user_id": 1,
+                "award": "ITパスポート",
+                "date": "2017/4"
+              }
+            ],
+            "topic": [
+              {
+                "id": 1,
+                "topic": "勉強会"
+              },
+              {
+                "id": 3,
+                "topic": "勉強会"
+              },
+              {
+                "id": 6,
+                "topic": "インターン"
+              }
+            ],
+            "wave_point": 160
+          }
+        }
+        
+## ユーザ詳細情報取得 [/api/users/detail]
+
+### ユーザ詳細情報更新[PUT]
+
++ Request (application/json)
+
+        {
+          "user_id": 2,
+          "user_detail": {
+            "nickname": "konojunya",
+            "display_name": "konojunya",
+            "sex": 0,
+            "cover_image": "https://tanabe.jp/sapiente-officia-qui-facilis-fugiat-vel-laborum-officiis.html",
+            "icon": "http://tanabe.net/",
+            "description": "俺様のコードに酔いな",
+            "introduction": "大阪を拠点に、フロントエンドエンジニアとして活動しています。HAL大阪 web開発学科。最近は株式会社Far Connectionが運営する「Tech Logics」と言う約200人のエンジニアやデザイナー、VCの方などが参加しているオンラインコミュニティの代表になったり、関東でも活発なIoT縛りの勉強会（IoTLT）を主催しています。基本的にはJSフレームワークなどを使ってSPAを作って楽しんでいますが、SPAにIoTなどいろいろ盛り込んで遊んでます。他にも、Skyland Ventures, East Ventures主催のイベントのスタッフをやらせていただいています。さらに来年(2017年)には、関西で一番大きなフロントエンドの祭典である「FRONTEND CONFERENCE 2017」の広報且つ当日のスタッフとして参加しています。プログラミングだけでなく、水泳8年、タップダンス8年、バレエ4年、珠算3年とダンサーとして活動していた時期もありました。",
+            "school_name": "HAL大阪",
+            "undergraduate": "IT学部",
+            "graduate": "2019/3",
+            "address": {
+              "id": 3,
+              "region": "青森県"
+            },
+            "facebook": "http://www.nagisa.com/",
+            "twitter": "http://yoshimoto.jp/",
+            "number_participate": 100,
+            "number_build": 300,
+            "career_history": [
+              {
+                "id": 1,
+                "user_id": 2,
+                "title": "lebe",
+                "Contents": "しごかれた",
+                "start_time": "2017/4",
+                "end_time": "2017/4"
+              },
+              {
+                "id": 2,
+                "user_id": 2,
+                "title": "morein",
+                "Contents": "遊んでた",
+                "start_time": "2017/4",
+                "end_time": "2017/4"
+              }
+            ],
+            "aspiring_industries": [
+              {
+                "id": 2,
+                "aspiring_industry": "広告"
+              },
+              {
+                "id": 3,
+                "aspiring_industry": "出版"
+              },
+              {
+                "id": 5,
+                "aspiring_industry": "銀行"
+              },
+              {
+                "id": 5,
+                "aspiring_industry": "銀行"
+              }
+            ],
+            "award": [
+              {
+                "id": 1,
+                "user_id": 2,
+                "award": "基本情報(仮)",
+                "date": "2017/4"
+              },
+              {
+                "id": 2,
+                "user_id": 2,
+                "award": "応用情報(仮)",
+                "date": "2017/4"
+              },
+              {
+                "id": 3,
+                "user_id": 2,
+                "award": "ITパスポート",
+                "date": "2017/4"
+              }
+            ],
+            "topic": [
+              {
+                "id": 1,
+                "topic": "オフィス訪問"
+              },
+              {
+                "id": 3,
+                "topic": "仕事仲間"
+              },
+              {
+                "id": 4,
+                "topic": "勉強会"
+              }
+            ],
+            "wave_point": 160
+          }
+        }
+       
+                
++ Response 200 (application/json)
+    
+        {
+        
+        }

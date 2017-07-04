@@ -1,0 +1,389 @@
+.cover-img-container {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  background-color: #fff;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.cover-img-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.profile-container {
+  position: relative;
+  padding: 0 20px;
+}
+.user-icon {
+  width: 90%;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+.edit-button {
+  display: block;
+  transform: translateY(100%);
+  margin-left: auto;
+  border: 1px solid #1A3358;
+  border-radius: 5px;
+  color: #1A3358;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+.icon-img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+}
+.icon-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+.region {
+  padding-left: 20px;
+}
+.region p {
+  font-size: 0.9rem;
+  color: #D8D8D8;
+}
+.profile-top h2 {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.profile-bottom {
+  display: flex;
+  align-items: center;
+}
+.description {
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+.sex-select {
+  padding-left: 20px;
+}
+.sex-select select {
+  outline: none;
+}
+
+.wave-score {
+  margin: 20px 0;
+}
+.wave-score h3 {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  color: #7290ce;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+.wave-score-circle {
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  border: 2px solid #7290ce;
+  background-color: #fff;
+  background-image: url(/image/wave_point_bg.svg);
+  background-position: bottom;
+  background-size: 40%;
+  background-repeat: repeat-x;
+  margin: 0 auto;
+}
+.wave-point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7290ce;
+  -webkit-font-smoothing: antialiased;
+}
+/* man */
+.wave-score.sex-man h3{
+  color: #7290ce;
+}
+.wave-score.sex-man .wave-score-circle{
+  border: 2px solid #7290ce;
+  background-image: url(/image/user/wave_point_bg_man.svg);
+}
+.wave-score.sex-man .wave-point{
+  color: #7290ce;
+}
+
+/* woman */
+.wave-score.sex-woman h3{
+  color: #FF728C;
+}
+.wave-score.sex-woman .wave-score-circle{
+  border: 2px solid #FF728C;
+  background-image: url(/image/user/wave_point_bg_woman.svg);
+}
+.wave-score.sex-woman .wave-point{
+  color: #FF728C;
+}
+
+.container {
+  padding: 0 20px;
+}
+.container h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+.container p {
+  font-size: 14px;
+  line-height: 2;
+  text-align: justify;
+}
+.container h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.section {
+  padding: 30px 0;
+}
+.section a {
+  color: #000;
+  text-decoration: none;
+}
+.list-section li {
+  list-style: none;
+  font-size: 17px;
+}
+.list-section dl {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.list-section dd {
+  margin-right: auto;
+}
+.list-section + .list-section{
+  border-bottom: 1px solid rgba(0,0,0,0.38);
+}
+.section-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.introduction .userInput-introduction {
+  border: 1px solid gray;
+  padding: 0.5rem;
+}
+.event-info li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.event-info .join-count-title,
+.event-info .organization-count-title{
+  font-size: 0.9rem;
+}
+.event-info .join-count,
+.event-info .organization-count{
+  margin-left: auto;
+  border: 1px solid #1A3358;
+  font-size: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  color: #1A3358;
+  border-radius: 50%;
+}
+.fav li{
+  font-size: 0.9rem;
+}
+.editMode .fav li input {
+  margin-right: 5px;
+}
+.educational-qualification li,
+.career-history li{
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+.educational-qualification dl,
+.career-history dl{
+  font-size: 0.8rem;
+  color: rgba(0,0,0,0.54);
+}
+.award-history dl{
+  font-size: 0.9rem;
+}
+.award-history li,
+.interest li,
+.aspiring-industries li{
+  margin: 10px 0;
+  font-size: .9rem;
+}
+.aspiring-industries ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aspiring-industries li {
+  width: 33.333%;
+}
+.aspiring-industries li input {
+  margin-right: 5px;
+}
+
+.editMode .career-history-input-area,
+.editMode .academic-history-input-area,
+.editMode .awards-history-input-area{
+  padding: 10px;
+  box-shadow: 0px 0px 1px black;
+  background-color: #fafafa;
+}
+.editMode .academic-history-input-area input,
+.editMode .career-history-input-area input{
+  padding: 10px;
+  font-size: 0.9rem;
+}
+.editMode .academic-history-input-area .school-name,
+.editMode .academic-history-input-area .department,
+.editMode .academic-history-input-area .date,
+.editMode .career-history-input-area .career-history-input-area__company-name{
+  width: 100%;
+}
+.editMode .career-history-input-area .career-history-input-area__position{
+  width: 100%;
+}
+.editMode .career-history-input-area .career-history-input-area__date{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.editMode .career-history-input-area .career-history-input-area__date input{
+  width: 45%;
+}
+.editMode .career-history-input-area .add-button,
+.editMode .academic-history-input-area .add-button,
+.editMode .awards-history-input-area .add-button{
+  width: 100%;
+  border: 0;
+  outline: none;
+  font-size: 1.1rem;
+  background-color: #7290ce;
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.editMode .awards-history-input-area__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.editMode .awards-history-input-area__wrapper input{
+  width: 50%;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.editMode input,
+.editMode textarea,
+.editMode .userInput-region{
+  border: 0;
+  outline: none;
+  background-color: #fff;
+}
+.editMode textarea{
+  width: 100%;
+  height: 15rem;
+  font-size: 0.9rem;
+}
+.editMode .userInput-displayName,
+.editMode .userInput-region option,
+.editMode .userInput-description{
+  font-size: 0.9rem;
+}
+.editMode .file-icon-input{
+  display: block;
+  width: 20vw;
+  height: 20vw;
+  background-color: rgba(255,255,255,0.5);
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.editMode .fa-plus{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.editMode .file-cover-input{
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.editMode .save-button{
+  border: 0;
+  outline: none;
+  display: block;
+  width: 40%;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #7290ce;
+  border: 1px solid #7290ce;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.editMode .image-upload-process{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+.editMode .image-upload-process p{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  text-align: center;
+  padding: 10px;
+  background-color: #fafafa;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 5px;
+}

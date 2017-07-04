@@ -1,0 +1,59 @@
+body,html{
+  background-color: #7593cb!important;
+}
+.main-container {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 70px;
+}
+.error-img img{
+  display: block;
+  width: 100%;
+}
+.main{
+  background-color: #7593cb;
+}
+.main h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.error-message {
+  padding-top: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+}
+
+.event-container h2{
+  padding-top: 70px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 200;
+}
+.event-content {
+  width: 70%;
+  margin: 0 auto;
+}
+.event-content ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.event {
+  width: 50%;
+  list-style: none;
+  padding: 10px;
+}
+.event a {
+  display: block;
+}
+.event img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

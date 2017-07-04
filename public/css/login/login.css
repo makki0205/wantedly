@@ -1,0 +1,188 @@
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 100; 
+}
+.main-container-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  overflow: hidden;
+}
+
+.view-message {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+}
+.view-message h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: left;
+  padding-top: 20px;
+}
+.logo-image {
+  display: inline-block;
+  width: 250px;
+}
+.view-message span {
+  position: relative;
+  top: 0;
+  left: -20px;
+}
+
+.login-form {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 35%;
+  transform: translateY(-50%);
+  border-radius: 2px;
+}
+.form-content label {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 16px;
+}
+.form-content input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+  background: none;
+  border: solid 2px #fff;
+  font-size: 1.1rem;
+  padding: 10px;
+  color: #fff;
+}
+/* 各ベンダープレフィックスが取れた標準版！！(http://caniuse.com/#search=placeholder-shown) */
+.form-content input:placeholder-shown {
+    color: #fff;
+}
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+.form-content input::-webkit-input-placeholder {
+    color: #fff;
+}
+/* Firefox 18- */
+.form-content input:-moz-placeholder {
+    color: #fff; opacity: 1;
+}
+/* Firefox 19+ */
+.form-content input::-moz-placeholder {
+    color: #fff; opacity: 1;
+}
+/* IE 10+ */
+.form-content input:-ms-input-placeholder {
+    color: #fff;
+}
+
+.password {
+  padding-top: 40px;
+}
+.reset-password {
+  text-align: right;
+}
+.reset-password a {
+  font-size: 14px;
+  color: #fff;
+  margin-left: 10px;
+  text-indent: 1rem;
+  text-decoration: none;
+}
+.reset-password a:hover {
+  text-decoration: underline;
+}
+div[class$="error-message"] {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+div[class$="error-message"] li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  color: #F6564A;
+  font-size: 13px;
+}
+
+.button-container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.login-button {
+  width: 45%;
+}
+.login-button .input-login-button {
+  background-color: #fff;
+  color: #46c1b6;
+  font-size: 1.3rem;
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+.login-button .input-login-button:hover{
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+}
+
+.form-content p {
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+}
+.sign-up-button {
+  width: 45%;
+  text-align: center;
+}
+.sign-up {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  color: #46c1b6;
+  font-size: 1.3rem;
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+.sign-up:hover{
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+}
+
+#footer{
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.8);
+}

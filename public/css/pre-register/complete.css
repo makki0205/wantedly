@@ -1,0 +1,33 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("/image/pre-register-complete-background.png");
+    background-size: cover;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.pre-register-complete-message {
+    padding-top: 5rem;
+    color: #FFFFFF;
+}
+
+.wave-logo {
+    padding-top: 1rem;
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.twitter-logo {
+    width: 100px;
+}
+
+.main-container .wave {
+    color: #FFFFFF;
+}

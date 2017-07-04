@@ -1,0 +1,339 @@
+.main-container {
+  background-color: #fafafa;
+  height: 100vh;
+}
+.main-view {
+  position: relative;
+  height: 95%;
+  overflow: hidden;
+  background-image: url(/image/top-main-view.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-view img {
+  display: block;
+  width: 100%;
+}
+.main-view-message {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.main-view-message h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.login-form {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  width: 400px;
+  background-color: #fff;
+  transform: translateY(-50%);
+  border-radius: 2px;
+}
+.login-form .title {
+  color: #fff;
+  background-color: #303030;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+.form-content {
+  padding: 20px 30px;
+}
+.form-content label {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 16px;
+}
+.form-content input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+  background-color: #fff;
+  border: solid 1px #979797;
+  font-size: 20px;
+  padding: 7px;
+  color: rgba(0,0,0,0.87);
+}
+.password {
+  padding-top: 20px;
+}
+.password a {
+  font-size: 14px;
+  color: rgba(0, 100, 255, 0.54);
+  margin-left: 20px;
+}
+div[class$="error-message"] {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+div[class$="error-message"] li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  color: rgb(217,4,4);
+  font-size: 13px;
+}
+.login-button {
+  padding-top: 30px;
+}
+.login-button .input-login-button {
+  background-color: #46c1b6;
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+  padding: 15px;
+}
+.login-button .input-login-button:hover{
+  background-color: #3CA8A0;
+}
+.login-button .click {
+  background-color: #2d847c !important;
+}
+.form-content p {
+  padding: 15px 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.54);
+}
+.sign-up {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  border-radius: 2px;
+  border: solid 1px #46c1b6;
+  background-color: #fff;
+  outline: none;
+  color: #46c1b6;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+.sign-up:hover{
+  background-color: #fafafa;
+}
+.sign-up-button .click {
+  background-color: #e2e2e2;
+}
+
+/* event gallery */
+.event-gallery {
+  background-color: white;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.event-gallery h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+.event-gallery p{
+  font-size: 100%;
+  padding-top: 10px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+.gallery {
+  padding-top: 20px;
+}
+.gallery li {
+  display: block;
+  width: 30%;
+  list-style: none;
+}
+.gallery li:hover{
+  opacity: 0.7;
+}
+.gallery li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.enjoy-the-event {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.enjoy-the-event h2 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+.enjoy-the-event ul {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.enjoy-the-event li {
+  display: block;
+  width: 47.5%;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.enjoy-the-event li+li {
+  margin-left: 5%;
+}
+.enjoy-the-event a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+.enjoy-the-event img {
+  display: inline-block;
+  height: 200px;
+  border-radius: 5px 40px 5px 40px;
+}
+.enjoy-the-event h3 {
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.enjoy-the-event p {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 90%;
+  line-height: 2;
+}
+
+
+.to-the-second-resume {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.to-the-second-resume h2 {
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+.to-the-second-resume p {
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 10px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+.company {
+  padding-top: 30px;
+  width: 70%;
+  margin: 0 auto;
+}
+.company ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.company li {
+  display: block;
+  list-style: none;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.company li img {
+  display: block;
+  height: 100%;
+}
+
+.featured-event-container {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.featured-event-container h2 {
+  padding-bottom: 20px;
+}
+.featured-event ul {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
+}
+.featured-event li {
+  display: block;
+  width: 47.5%;
+  list-style: none;
+}
+.featured-event li img {
+  display: block;
+  width: 100%;
+}
+
+.featured-tag-container {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.featured-tag-container h2 {
+  padding-bottom: 20px;
+}
+.featured-tag {
+  padding: 20px 50px;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.featured-tag ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.featured-tag li {
+  width: 20%;
+  list-style: none;
+}
+.featured-tag a {
+  display: inline-block;
+  color: #28c4dd;
+  padding: 5px 0;
+}
+.featured-tag span {
+  padding-left: 5px;
+}
+
+.loading-wrapper{
+  width: 400px;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 600;
+  background-color: rgba(0,0,0,0.7);
+}
+.loading-wrapper .loading-animation{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%); 
+  -moz-transform: translateX(-50%) translateY(-50%); 
+  -ms-transform: translateX(-50%) translateY(-50%); 
+  -o-transform: translateX(-50%) translateY(-50%); 
+  transform: translateX(-50%) translateY(-50%); 
+  color: white;
+}
+
+#footer{
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.87);
+  padding: 10px 0;
+}
+#footer small{
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+}

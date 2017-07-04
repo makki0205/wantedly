@@ -1,0 +1,281 @@
+.main-img{
+	width: 100%;
+	margin: 0 0;
+}
+.main-img img {
+	display: block;
+	width: 100%;
+}
+.main{
+	width: 100%;
+	margin: 5px 0;
+}
+.main h1 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px 0;
+}
+.tags {
+	display: flex;
+	justify-content: flex-end;
+	margin: 5px 0;
+}
+.tags li {
+	list-style: none;
+	margin-right: 20px;
+}
+.tags li a {
+	color: #28c4dd;
+	font-size: 0.8rem;
+	text-decoration: none;
+}
+.chat-join {
+	margin: 20px 0;
+}
+.chat-join button {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-radius: 5px;
+	border: 0;
+	background-color: #7593CB;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #fff;
+	outline: none;
+}
+
+.main h3 {
+	width: 100%;
+	background-color: #81d8d0;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.event-info-table {
+	padding: 20px 10px;
+}
+.event-info-table table {
+	padding: 30px 0;
+	font-size: 0.8rem;
+	border-collapse: collapse;
+}
+.event-info-table tr{
+	margin-bottom: 20px;
+	display: block;
+}
+.event-info-table th {
+	font-weight: bold;
+	white-space: nowrap;
+	vertical-align: top;
+}
+.event-info-table .add-google-cal{
+	width: 70%;
+	display: block;
+	text-decoration: none;
+	border: 1px solid #5A80DB;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+	color: #5A80DB;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+.entry-form table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.entry-form tr {
+	border-bottom: 1px solid #d8d8d8;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+}
+.entry-form th {
+	text-align: left;
+	font-weight: bold;
+	white-space: nowrap;
+	font-size: 0.9rem;
+	display: block;
+	min-width: 6.5rem;
+}
+.entry-form td {
+	font-size: 0.9rem;
+}
+.entry-form .join-button{
+	margin-left: auto;
+}
+.now-count{
+	display: inline-block;
+	text-align: center;
+}
+.max-count {
+	display: inline-block;
+	text-align: center;
+}
+
+/*参加*/
+.entry-form .join {
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 2px solid #ff303d;
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: #ff303d;
+	outline: none;
+	padding: 5px 10px;
+}
+
+/*参加中*/
+.entry-form .is-join { 
+	background-color: #EF5757;
+	color: #fff;
+}
+
+.event-contents-container{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.event-contents-container h4{
+	padding: 10px 20px;
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+.event-contents-container .event-description{
+	width: 100%;
+	padding: 0 20px;
+	font-size: 14px;
+	line-height: 2;
+}
+.event-contents-container .join-pay{
+	font-size: 14px;
+	padding: 0 20px;
+}
+.event-contents-container .time-schedule{
+	width: 100%;
+}
+.event-contents-container .time-schedule th{
+	font-weight: bold;
+	padding: 5px 0;
+	white-space: nowrap;
+	font-size: 14px;
+}
+.event-contents-container .time-schedule td{
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.chat-box{
+	position: fixed;
+	top: 100vh;
+	left: 0;
+	width: 100%;
+	height: 93vh;
+	background-color: #fafafa;
+}
+.chat-box .chat-head{
+	width: 100%;
+	height: 5%;
+	background-color: #5C5C5C;
+	display: flex;
+	align-items: center;
+}
+.chat-box .chat-head .title{
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: white;
+	margin-right: auto;
+	padding: 0 10px;
+}
+.chat-box .chat-head .close-button{
+	background-color: #FF5D5D;
+	padding: 0 10px;
+	height: 100%;
+}
+.chat-box .chat-head .close-button img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.chat-box .message{
+	width: 100%;
+	height: 85vh;
+	padding: 10px;
+	overflow-y: scroll; 
+}
+.chat-box .message li{
+	list-style: none;
+	margin: 10px 0;
+}
+.chat-box .message li.me .balloon-box{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-left: auto;
+}
+.chat-box .message .balloon{
+	position: relative;
+	background-color: #f1f0f0;
+	border: 0px solid #888;
+	margin: 10px 0;
+	padding: 5px 10px;
+	border-radius: 15px;
+	max-width: 40%;
+	word-break : break-all;
+	color: rgba(0,0,0,0.87);
+	display: inline-block;
+	font-size: 0.9rem;
+}
+.chat-box .message li.me .balloon{
+	color: white;
+	background-color: #0084ff;
+}
+.chat-box .message .sender-name{
+	margin-bottom: -5px;
+	color: rgb(0,0,0,0.4);
+	font-size: 0.7rem;
+}
+.chat-box .message li.me .sender-name{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.chat-box .input-area{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.chat-box .input-area .send-input{
+	width: 85%;
+}
+.chat-box .input-area .send-input input{
+	display: block;
+	width: 100%;
+	border: 0;
+	outline: none;
+	padding: 5px;
+	font-size: 17px;
+}
+.chat-box .input-area .send-button{
+	width: 15%;
+}
+.chat-box .input-area .send-button button{
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 0.9rem;
+	border: 0;
+	outline: none;
+	background-color: #7999D3;
+	padding: 5px;
+}

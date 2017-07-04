@@ -1,0 +1,387 @@
+.cover{
+	width: 100%;
+	height: 300px;
+	background-color: #4D4F4F;
+	background-repeat: no-repeat; 
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+.cover .sns{
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	-o-display: flex;
+	display: flex;
+	justify-content: space-between;
+	width: 80px;
+	z-index: 600;
+}
+.cover .sns li{ list-style: none; }
+.cover .sns li a{ text-decoration: none; }
+.cover .sns li a.twitter{ color: #397EE3; }
+.cover .sns li a.facebook{ color: #12233A; }
+.cover .sns li a.disconnect{ color: #c0c0c0; }
+.cover .filter{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 500;
+}
+
+.icon-box{
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding: 0 5rem;
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+	z-index: 600;
+}
+.icon-box .img{
+	width: 10vw;
+	height: 10vw;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.icon-box .img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.icon-box .edit-button{
+	display: block;
+	border: 0;
+	outline: none;
+	margin-left: 50px;
+	font-size: 1rem;
+	background-color: #fff;
+	color: #7290ce;
+	border: 1px solid #7290ce;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.user-detail-contents{
+	padding: 0 5rem;
+	-webkit-transform: translateY(-75%);
+	-moz-transform: translateY(-75%);
+	-ms-transform: translateY(-75%);
+	-o-transform: translateY(-75%);
+	transform: translateY(-75%);
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	-o-display: flex;
+	display: flex;
+	align-items: center;
+}
+.user-detail-contents .name{
+	color: rgba(0,0,0,0.87);
+	margin: 10px 0;
+	letter-spacing: 2px;
+}
+.user-detail-contents .description{
+	color: rgba(0,0,0,0.87);
+	margin: 10px 0;
+	font-size: 0.95rem;
+}
+.user-detail-contents .region{
+	color: rgba(0,0,0,0.7);
+	margin-left: 50px;
+}
+.main-contents h2{
+	font-size: 1.3rem;
+}
+.main-contents .top-content{
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	-o-display: flex;
+	display: flex;
+	align-items: flex-start;
+	padding: 0 5rem;
+	-webkit-transform: translateY(-15%);
+	-moz-transform: translateY(-15%);
+	-ms-transform: translateY(-15%);
+	-o-transform: translateY(-15%);
+	transform: translateY(-15%);
+}
+.main-contents .top-content .introduction{
+	width: 60%;
+	margin-right: 5%;
+}
+.main-contents .top-content .introduction h2{
+	margin: 5px 0;
+	color: rgba(0,0,0,0.87);
+}
+.main-contents .top-content .introduction .introduction-text{
+	color: rgba(0,0,0,0.87);
+	line-height: 2;
+	max-height: 45vh;
+	width: 100%;
+	overflow-y: scroll; 
+}
+.editMode .main-contents .top-content .introduction .introduction-text{
+	box-shadow: 0px 0px 1px black;
+	max-width: 50rem;
+	max-height: 15rem;
+	padding: 5px;
+}
+.wave-point-box{
+	position: relative;
+	width: 15rem;
+	height: 15rem;
+	border-radius: 50%;
+	background-color: #fff;
+  background-position: bottom;
+  background-size: 40%;
+  background-repeat: repeat-x;
+}
+.wave-point-box h2{
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	width: 100%;
+}
+.wave-point-box .wave-point{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-font-smoothing: antialiased;
+	font-weight: bold;
+	font-size: 3rem;
+	transform: translateX(-50%) translateY(-50%);
+}
+.wave-point-box.sex-man{ border: 2px solid #7290ce; background-image: url(/image/user/wave_point_bg_man.svg); }
+.wave-point-box.sex-man h2{ color: #7290ce; }
+.wave-point-box.sex-man .wave-point{ color: #7290ce; }
+
+.wave-point-box.sex-woman{ border: 2px solid #FF728C; background-image: url(/image/user/wave_point_bg_woman.svg); }
+.wave-point-box.sex-woman h2{ color: #FF728C; }
+.wave-point-box.sex-woman .wave-point{ color: #FF728C; }
+
+.main-contents .bottom-content{
+	padding: 0 5rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 95%;
+}
+.main-contents .bottom-content > div{
+	width: 15%;
+}
+.main-contents .bottom-content > div h2{
+	margin: 10px 0;
+}
+
+.event-container li{
+	list-style: none;
+	margin: 10px 0;
+}
+.event-container li .join-count-title,
+.event-container li .organization-count-title{
+	font-size: 0.9rem;
+	margin-right: 30px;
+}
+.event-container li .join-count,
+.event-container li .organization-count{
+	font-size: 1.7rem;
+	color: #3E4D6F;
+	font-weight: bold;
+	padding: 20px;
+}
+.fav-container .interest,
+.history-container .academic-history{
+	margin-bottom: 30px;
+}
+.fav-container .interest ul,
+.fav-container .aspiring-industries ul{
+	padding: 0 30px;
+}
+.fav-container li{
+	list-style: circle;
+}
+
+.main-contents .bottom-content .history-container{ width: 25%; }
+.main-contents .bottom-content .event-container{ width: 20%; }
+.main-contents .bottom-content .fav-container{ width: 30%; }
+.history-container .academic-history li,
+.history-container .career-history li{
+	list-style: none;
+}
+.history-container li{
+	margin: 10px 0;
+}
+.history-container li .school-name,
+.history-container li .company-name{
+	font-size: 1rem;
+	font-weight: bold;
+}
+.history-container li .sub{
+	display: flex;
+	align-items: center;
+	font-size: 0.9rem;
+	color: rgba(0,0,0,0.54);
+}
+
+.history-container li .sub .date{
+	margin-left: auto;
+}
+
+.awards-history li{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+}
+.awards-history li .award-date{
+	margin-left: auto;
+	color: rgba(0,0,0,0.54);
+}
+
+.editMode input,
+.editMode textarea,
+.editMode .userInput-region,
+.editMode .userInput-sex{
+  border: 0;
+  outline: none;
+  background-color: #fff;
+}
+.editMode textarea{
+  width: 100%;
+  height: 15rem;
+  font-size: 0.9rem;
+}
+.editMode .userInput-displayName,
+.editMode .userInput-region option,
+.editMode .userInput-description{
+  font-size: 1.5rem;
+}
+.editMode .icon-select-filter{
+	display: block;
+  width: 10vw;
+  height: 10vw;
+  background-color: rgba(255,255,255,0.5);
+  position: absolute;
+  top: 0;
+  left: 5rem;
+  border-radius: 10px;
+}
+.editMode .icon-select-filter .fa-plus,
+.editMode .cover-select-filter .fa-plus{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	opacity: .8;
+}
+.editMode .file-icon-input{
+  display: none;
+}
+.editMode .cover-select-filter{
+	width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+.editMode .file-cover-input{
+	display: none;
+}
+
+.editMode .fav-container ul{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding: 0;
+}
+.editMode .fav-container li{
+	list-style: none;
+	width: 45%;
+	margin: 5px 0;
+	font-size: 0.9rem;
+}
+.editMode .fav-container li input{
+	margin-right: 5px;
+}
+.editMode .save-button{
+  border: 0;
+  outline: none;
+  display: block;
+  width: 40%;
+  margin: 50px auto;
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #7290ce;
+  border: 1px solid #7290ce;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.editMode .career-history-input-area,
+.editMode .awards-history-input-area{
+	padding: 10px;
+	box-shadow: 0px 0px 1px black;
+	background-color: #fafafa;
+}
+.editMode .career-history-input-area input{
+	padding: 10px;
+	font-size: 0.9rem;
+}
+.editMode .career-history-input-area .career-history-input-area__company-name{
+	width: 100%;
+}
+.editMode .career-history-input-area .career-history-input-area__position{
+	width: 100%;
+}
+.editMode .career-history-input-area .career-history-input-area__date{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+.editMode .career-history-input-area .career-history-input-area__date input{
+	width: 45%;
+}
+.editMode .career-history-input-area .add-button,
+.editMode .awards-history-input-area .add-button{
+	width: 100%;
+	border: 0;
+	outline: none;
+	font-size: 1.1rem;
+	background-color: #7290ce;
+	color: white;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.editMode .awards-history-input-area__wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.editMode .awards-history-input-area__wrapper input{
+	width: 50%;
+	font-size: 0.9rem;
+	padding: 10px;
+}

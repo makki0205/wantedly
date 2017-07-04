@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>close-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="SP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="イベント詳細ページ（イベント中チャット画面）" transform="translate(-331.000000, -67.000000)" stroke="#FFFFFF">
+            <g id="close-button" transform="translate(331.000000, 67.000000)">
+                <path d="M0.571909584,0.571909584 L19.4280904,19.4280904" id="Line"></path>
+                <path d="M0.571909584,19.4280904 L19.4280904,0.571909584" id="Line"></path>
+            </g>
+        </g>
+    </g>
+</svg>

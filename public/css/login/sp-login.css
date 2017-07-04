@@ -1,0 +1,140 @@
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1; 
+  padding-top: 30px;
+  overflow: hidden;
+}
+.main-container-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: -100;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  margin-bottom: -50px;
+  transform: scale(1.1);
+}
+
+.login-form {
+  width: 100%;
+  padding: 30px;
+}
+.form-content label {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 16px;
+}
+.form-content input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+  background: none;
+  border: solid 2px #fff;
+  font-size: 1rem;
+  padding: 10px;
+  color: #fff;
+}
+/* 各ベンダープレフィックスが取れた標準版！！(http://caniuse.com/#search=placeholder-shown) */
+.form-content input:placeholder-shown {
+    color: #fff;
+}
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+.form-content input::-webkit-input-placeholder {
+    color: #fff;
+}
+/* Firefox 18- */
+.form-content input:-moz-placeholder {
+    color: #fff; opacity: 1;
+}
+/* Firefox 19+ */
+.form-content input::-moz-placeholder {
+    color: #fff; opacity: 1;
+}
+/* IE 10+ */
+.form-content input:-ms-input-placeholder {
+    color: #fff;
+}
+
+.reset-password {
+  padding-top: 30px;
+  text-align: right;
+}
+.reset-password a {
+  font-size: 14px;
+  color: #fff;
+  margin-left: 10px;
+  text-indent: 1rem;
+  text-decoration: none;
+}
+.reset-password a:hover {
+  text-decoration: underline;
+}
+div[class$="error-message"] {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+div[class$="error-message"] li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  color: red;
+  font-size: 13px;
+}
+.login-button {
+  padding-top: 30px;
+}
+.login-button .input-login-button {
+  background-color: #fff;
+  color: #46c1b6;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: 0.3s;
+  -webkit-appearance: none;
+}
+.login-button .input-login-button:hover{
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+}
+
+.form-content p {
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+}
+.sign-up-button {
+  text-align: center;
+}
+.sign-up {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+  background: none;
+  border: solid 2px #fff;
+  font-size: 1rem;
+  padding: 10px;
+  color: #fff;
+}
+
+#footer {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  z-index: 100;
+}

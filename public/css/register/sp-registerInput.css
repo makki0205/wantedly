@@ -1,0 +1,65 @@
+.main-container {
+	width: 100%;
+}
+
+.register-form .title{
+	background-color: #303030;
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 200;
+	text-indent: 1rem;
+}
+.form-content {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.form-content label {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 16px;
+}
+.form-content input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+  background-color: #fff;
+  border: solid 1px #979797;
+  font-size: 0.9rem;
+  padding: 7px;
+  color: rgba(0,0,0,0.87);
+}
+
+.input+.input {
+	margin-top: 10px;
+}
+
+div[class$="error-message"]{
+  list-style: none;
+  color: rgb(217,4,4);
+  font-size: 0.8rem;
+}
+.form-content .send-button {
+  margin-top: 20px;
+	display: block;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #46c1b6;
+  color: #fff;
+  font-size: 0.9rem;
+  border: 0;
+  cursor: pointer;
+  padding: 12px 0;
+  outline: none;
+}
+.form-content .send-button:hover {
+  background-color: #3CA8A0;
+}
+
+#footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

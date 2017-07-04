@@ -1,0 +1,230 @@
+.main-container {
+	width: 70%;
+	min-width: 980px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.main-top {
+	display: flex;
+}
+.main-left {
+	width: 60%;
+}
+.main-left h1 {
+	font-size: 35px;
+}
+.main-left h2 {
+	border-radius: 8px;
+	background-color: #58BBDB;
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 200;
+	text-indent: 1rem;
+}
+.tag {
+	padding: 10px 0 20px;
+}
+.tag ul {
+	display: flex;
+}
+.tag li {
+	list-style: none;
+	margin-right: 20px;
+}
+.tag a {
+	color: #28c4dd;
+}
+.event-info table{
+	margin: 10px 0;
+}
+.event-info tr{
+	display: block;
+	margin: 10px 0;
+}
+.event-info th{
+	padding: 0;
+	width: 80px;
+}
+.event-info td{
+	width: 500px;
+}
+.event-info .date-area{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.event-info .date-area .date{
+	margin-right: auto;
+}
+.event-info .date-area .add-google-cal{
+	display: block;
+	text-decoration: none;
+	border: 1px solid #5A80DB;
+	padding: 10px;
+	color: #5A80DB;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.event-info .date-area .add-google-cal:hover{
+	background-color: #5A80DB;
+	color: white;
+}
+.event-contents h3 {
+	padding-top: 30px;
+	border-bottom: 1px solid #d8d8d8;
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+}
+.event-contents p {
+	font-size: 14px;
+}
+.time-schedule th {
+	font-weight: 200;
+	padding: 5px 0;
+}
+.time-schedule td {
+	text-indent: 1rem;
+}
+
+.main-right {
+	width: 40%;
+	padding-left: 5%;
+}
+.entry-form {
+	padding-bottom: 30px;
+}
+.entry-form table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.entry-form tr {
+	border-bottom: 2px solid #d8d8d8;
+}
+.entry-form th {
+	text-align: left;
+	text-indent: 1rem;
+	font-weight: 200;
+}
+.entry-form td {
+	padding: 7px;
+}
+.entry-form p {
+	text-align: right;
+}
+.now-count{
+	display: inline-block;
+	width: 25px;
+	text-align: center;
+}
+.max-count {
+	display: inline-block;
+	width: 25px;
+	text-align: center;
+}
+
+/*参加*/
+.entry-form .join {
+	display: block;
+	width: 70px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 2px solid #ff303d;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ff303d;
+	outline:none;
+}
+.entry-form .join:hover{
+	background-color: #ff303d;
+	color: #fff;
+}
+
+/*参加中*/
+.entry-form .is-join { 
+	background-color: #ff303d;
+	color: #fff;
+}
+
+.venue {
+	padding-bottom: 10px;
+}
+.venue h3{
+	margin-bottom: 10px;
+}
+.venue h3 span{
+	padding-left: 5px;
+	color: #3b3b3b;
+}
+.venue .place {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.venue .place-address{
+	font-size: 14px;
+}
+.map {
+	width: 100%;
+	height: 300px;
+	background-color: #3b3b3b;
+}
+.map iframe{
+	width: 100%;
+	height: 300px;
+}
+.recommended-event {
+	padding-top: 40px;
+}
+.recommended-event li {
+	list-style: none;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+	margin-bottom: 20px;
+}
+.recommended-event img {
+	display: block;
+	width: 100%;
+}
+
+
+
+.main-bottom {
+	padding-top: 50px;
+}
+.main-bottom h3 {
+	padding-bottom: 15px;
+}
+.featured-tag {
+	padding: 20px 50px;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.featured-tag ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+.featured-tag li {
+	width: 20%;
+	list-style: none;
+}
+.featured-tag a {
+	display: inline-block;
+	color: #28c4dd;
+	padding: 5px 0;
+}
+.featured-tag span {
+	padding-left: 5px;
+}
+
+
+#footer{
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.87);
+  padding: 10px 0;
+}
+
+#footer small{
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+}

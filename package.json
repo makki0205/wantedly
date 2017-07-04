@@ -1,0 +1,34 @@
+{
+  "name": "WAVE",
+  "version": "1.0.0",
+  "description": "new web service",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "concurrently \"webpack -w --progress\" \"compass w\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nappannda/WAVE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nappannda/WAVE/issues"
+  },
+  "homepage": "https://github.com/nappannda/WAVE#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "concurrently": "^3.1.0",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "vue": "^2.1.6"
+  }
+}

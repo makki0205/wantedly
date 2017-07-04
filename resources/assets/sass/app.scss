@@ -1,0 +1,79 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+// Variables
+@import "variables";
+@import "reset";
+
+@import "compass/css3/transform";
+
+.wrapper{
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  @include translateY(-50%);
+  .logo{
+    width: 15%;
+    margin: 0 auto;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+  .login-box{
+    width: 80%;
+    margin: 0 auto;
+    form{
+      margin-top: 50px;
+      .name-area,
+      .password-area{
+        display: block;
+        margin: 0 auto;
+        padding: 5px 0;
+      }
+      .name-area label,
+      .password-area label{
+        font-size: 0.95rem;
+        padding: 10px 0;
+        display: block;
+      }
+      .name-area input,
+      .password-area input{
+        display: block;
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 10px;
+        outline: none;
+        border: 0;
+        border: 1px solid rgb(203, 203, 203);
+      }
+      .check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        .checkbox-area{
+          display: inline-block;
+          width: auto;
+          margin: 0;
+          margin-right: 20px;
+          span{
+            font-size: 0.9rem;
+          }
+        }
+        .forget-password-link{
+          margin: 0;
+          color: rgb(73, 144, 238);
+          font-size: 0.9rem;
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
+      .login-button{
+        display: block;
+        width: 15%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
